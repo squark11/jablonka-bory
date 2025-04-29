@@ -1,0 +1,127 @@
+
+          #gdpr--cookie-policy-root {
+            box-sizing: border-box;
+            bottom: 0;
+            left: 0;
+            padding: 30px 30px 20px;
+            position: fixed;
+            background: white;
+            box-shadow: 0 -4px 6px -4px rgba(0, 0, 0, 0.3);
+            width: 100%;
+            background: #333;
+            color: #f3f3f3;
+            z-index: 99999 !important;
+            transition: all 0.6s ease-out;
+          }
+          #gdpr--cookie-policy-root.hidden {
+            -webkit-transform: translate(0, 100%);
+            transform: translate(0, 100%);
+            opacity: 0;
+          }
+          #gdpr--cookie-policy-root.gone {
+            display: none;
+          }
+          #gdpr--cookie-policy-root a {
+            color: white;
+            font-weight: 700;
+            text-decoration: underline !important;
+            font-size: 14px;
+          }
+          #gdpr--cookie-policy-root a:hover {
+            text-decoration: none !important;
+          }
+          #gdpr--cookie-policy-root .gdpr--cookie-policy-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+          }
+          #gdpr--cookie-policy-root .gdpr--cookie-policy-content div {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 30px;
+            font-size: 14px;
+            line-height: 21px;
+          }
+          #gdpr--cookie-policy-root .gdpr--cookie-policy-content .gdpr--cookie-policy-actions {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0;
+          }
+          #gdpr--cookie-policy-root .gdpr--cookie-policy-content .gdpr--cookie-policy-actions button {
+            display: block;
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+            padding: 1px 10px !important;
+            transition: all 0.2s ease-in;
+            cursor: pointer;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 13.333px;
+            line-height: 36px;
+            font-weight: 700;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            white-space: nowrap;
+            margin: 5px;
+          }
+          #gdpr--cookie-policy-root .gdpr--cookie-policy-content .gdpr--cookie-policy-actions button:hover {
+            background: #d9d9d9;
+            border-color: #d9d9d9;
+            color: #333;
+          }
+          #gdpr--cookie-policy-root .gdpr--cookie-policy-content .gdpr--cookie-policy-actions button.gdpr--cookie-accept:hover {
+            background: green;
+            border-color: green;
+            color: white;
+          }
+          #gdpr--cookie-policy-root .gdpr--cookie-close {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            cursor: pointer;
+          }
+          #gdpr--cookie-policy-root .gdpr--cookie-close i {
+            font-size: 20px;
+            transition: all 0.1s ease-in;
+            -webkit-transform: translate(0);
+            transform: translate(0);
+          }
+          #gdpr--cookie-policy-root .gdpr--cookie-close:hover i {
+            -webkit-transform: translateZ(0) scale(1.2);
+            transform: translateZ(0) scale(1.2);
+          }
+          @media (min-width: 768px) {
+            #gdpr--cookie-policy-root {
+              padding: 20px 30px;
+            }
+            #gdpr--cookie-policy-root .gdpr--cookie-policy-content {
+              flex-direction: row;
+              justify-content: flex-start;
+            }
+            #gdpr--cookie-policy-root .gdpr--cookie-policy-content > div {
+              margin-bottom: 0;
+              margin-right: 15px;
+            }
+            #gdpr--cookie-policy-root .gdpr--cookie-policy-content .gdpr--cookie-policy-actions {
+              max-width: 250px;
+              display: flex;
+              margin-left: 20px;
+              justify-content: space-between;
+            }
+            #gdpr--cookie-policy-root .gdpr--cookie-policy-content .gdpr--cookie-policy-actions button {
+              margin: 0;
+            }
+            #gdpr--cookie-policy-root .gdpr--cookie-info-link {
+              margin-right: 0 !important;
+            }
+          }

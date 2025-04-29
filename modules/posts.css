@@ -1,0 +1,33 @@
+@import url(variables.css);
+
+.globalNav{
+    margin: 80px auto 0;
+    padding: 40px 0;
+    max-width: 80vw;
+}
+.postMain {
+    margin-bottom: 40px;
+    display: inline-block;
+}
+.postInfo{
+    justify-content: space-between;
+    color:#5a5a5a;
+    padding: 10px 0;
+}
+.postMain h2{
+    font-size: 2em;
+}
+
+.postContent > p{
+    font-size: 14px;
+    line-height: 1.8em;
+    text-align: justify;
+}
+.postContent > img{
+    float: right;
+    margin-left: 90px;
+    margin-bottom: 90px;
+    max-width: 80vw;
+    border-radius: 20px;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+}

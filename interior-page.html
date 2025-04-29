@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>Jablonka_Bory</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="scripts/Tmpl.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <nav class="slide-down">
+        <a href="#mobile" onClick="Mojobiekt.mobilemenu()" class="mobileMenu"><span></span></a>
+        <ul class="flexBlock mobileMenu">
+            <li class="home">
+                <a href="index.html">Strona Główna</a>
+            </li>
+            <li>
+                <a href="interior-page.html">Oferta</a>
+            </li>
+            <li>
+                <a href="interior-page.html">O nas</a>
+            </li>
+            <li>
+                <a href="interior-page.html">Aktualności</a>
+            </li>
+            <li>
+                <a href="interior-page.html">Galeria</a>
+            </li>
+            <li>
+                <a href="interior-page.html">Kontakt</a>
+            </li>
+            <li>
+                <a href="interior-page.html" class="btn btn-third">Na Żywo</a>
+            </li>
+        </ul>
+        <span onClick="Mojobiekt.mobilemenu()" class="shadow mobileMenu"></span>
+    </nav>
+    <header class="interiorPage">
+        <div class="title center">
+            <h2>Podstrona</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro neque doloremque fugit provident. </p>
+        </div>
+        
+    </header>
+
+    <a href="#" class="scrollToTop" style="display: flex;">
+        <svg class="fa" viewBox="0 0 128 128">
+            <path
+                d="M0 91.438c0,-5.346 9.233,-12.884 14.067,-17.718l39.732 -39.732c2.734,-2.734 4.844,-6.04 9.58,-6.772 4.921,-0.761 7.735,2.825 10.178,5.269l47.893 47.893c4.782,4.782 6.55,4.978 6.55,11.919 0,3.196 -4.536,7.732 -7.731,7.732 -6.07,0 -6.09,-0.72 -10.202,-4.832 -4.756,-4.758 -43.675,-44.109 -45.638,-45.423 -1.829,1.225 -24.347,24.133 -26.523,26.308l-19.973 19.974c-2.045,2.046 -4.565,4.832 -8.483,4.832 -4.891,0 -9.45,-4.621 -9.45,-9.45z" />
+        </svg>
+    </a>
+
+    <footer>
+        <div class="mainFooter">
+            <div class="columns flexBlock center">
+                <div class="column column_01 slide-down">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="">Strona Główna</a></li>
+                        <li><a href="">Historia parafii</a></li>
+                        <li><a href="">Galeria</a></li>
+                        <li><a href="">Kontakt</a></li>
+                        <li><a href="">Polityka prywatności</a></li>
+                    </ul>
+                </div>
+                <div class="column column_02 slide-down">
+                    <h3>Parafie na Orawie</h3>
+                    <div class="flexBlock">
+                        <ul>
+                            <li><a href="">Lipnica Wielka</a></li>
+                            <li><a href="">Lipnica Mała</a></li>
+                            <li><a href="">Piekielnik</a></li>
+                            <li><a href="">Podsarnie-Harkabuz</a></li>
+                            <li><a href="">Jabłonka Centrum</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Orawka</a></li>
+                            <li><a href="">Chyżne</a></li>
+                            <li><a href="">Podwilk</a></li>
+                            <li><a href="">Lipnica Wielka Murowanica</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column column_03 slide-right">
+                    <h3>Kontakt</h3>
+                    <p>Parafia św. Brata Alberta w Jabłonce Bory</p>
+                    <div class="flexBlock">
+                        <a href="">
+                            <svg class="fa" viewBox="0 0 128 128">
+                                <path
+                                    d="M62.462 128l3.076 0c2.77,-1.846 2.154,-0.615 4.308,-3.384 1.231,-1.539 2.154,-2.769 3.385,-4.308 11.077,-13.846 22.769,-30.769 29.846,-47.385 3.692,-8.308 5.538,-14.154 6.769,-24 0.616,-17.539 -6.461,-29.846 -16.615,-38.462 -1.231,-0.923 -2.462,-1.538 -3.692,-2.461 -2.154,-1.539 -4.923,-3.077 -7.693,-4.308 -5.538,-2.461 -13.538,-4 -20.308,-3.385 -16.923,0.924 -28.307,10.154 -35.076,19.078 -18.462,25.538 -2.462,56 12.307,78.769 3.692,5.539 7.077,10.769 11.077,15.692 1.846,2.77 3.692,5.231 5.846,7.693 4.616,5.846 2.462,3.692 6.77,6.461zm-1.539 -97.846c-8,1.538 -15.077,9.23 -12.923,19.077 1.538,8 9.231,14.769 19.077,12.923 8,-1.539 14.769,-9.231 12.923,-19.077 -1.538,-8 -9.231,-14.77 -19.077,-12.923z" />
+                            </svg>
+                            ul. św. Brata Alberta 2, 34-480 Jabłonka
+                        </a>
+                        <a href="">
+                            <svg class="fa" viewBox="0 0 128 128">
+                                <path
+                                    d="M0.24 31c2,13.25 6.75,23.5 13.75,34.5 3.5,5 6.75,9.5 10.5,13.75 0.75,1.25 1.75,2.5 2.5,3.5l3 3c1,1.25 1.75,2 3,3 13,14.5 39,34.75 58.75,38.5 0.75,0 4.501,0.5 5.25,0.75l4.5 0c1.75,-0.75 5.75,-0.5 9.5,-3.5l13.251 -13.25c1.75,-2 4,-5.75 3.5,-9.5 -0.25,-5.75 -3.5,-8 -6.251,-10.75l-12.499 -12.75c-1.251,-1 -2.751,-3 -4.5,-3.75 -3.75,-2.5 -8.751,-2.5 -12.751,-0.25 -4.75,3 -3.75,6 -7,9.75 -2.25,2.75 -6.5,5.25 -11.75,4.25 -4,-0.75 -8.5,-3.5 -11.25,-5.5 -3.25,-2 -9,-6.75 -11.25,-9.5 -6.25,-7.25 -17.25,-22 -7,-30.25 4.25,-3 6.75,-2 10,-6.5 2.5,-4 2.25,-9.25 0,-13.25 -1.5,-2.25 -14.25,-14.75 -16.5,-16.75 -2.25,-2.25 -3.75,-4.25 -7,-5.5 -1,-0.5 -2.25,-0.5 -3,-1l-3.5 0c-1.75,0.75 -3,0.75 -5,1.75 -1.25,1 -2.5,2.25 -3.5,3.25 -2.25,2.25 -4.5,4.5 -6.75,6.75 -5.25,5.25 -8.5,7.75 -8,19.25z" />
+                            </svg>
+                            <span>606 272 540</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copywright center flexBlock">
+            <p>@2025 Wszelkie prawa zastrzeżone przez <span>Parafia św. Brata Alberta w Jabłonce Bory </span></p>
+            <p>Strona stworzona przez: <a href="">Kacper Maćkowiak</a></p>
+        </div>
+    </footer>
+
+    <script src="scripts/reveal.js" type="text/javascript"></script>
+</body>
+
+</html>

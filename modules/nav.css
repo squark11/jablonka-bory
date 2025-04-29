@@ -1,0 +1,217 @@
+@import url("variables.css");
+
+nav {
+    background-color: var(--white);
+    font-size: var(--fontRegular);
+    position: fixed;
+    z-index: 999;
+    top:0;
+    left: 0;
+    right: 0;
+    justify-content:space-between;
+    align-items: center;
+    box-sizing: content-box;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.3);
+  }
+  
+nav ul{
+    justify-content: center;
+    align-items: center;
+}
+  nav>ul>li {
+      padding: 0 20px;
+  }
+  nav>ul>li{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+nav > ul > li > ul{
+    top:40px;
+    position: absolute;
+    background: var(--white);
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+nav > ul > li > ul > li{
+    padding: 5px 20px;
+    border-bottom: 2px solid var(--gray);
+}
+nav > ul > li:hover > ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+nav>ul li:nth-child(-n+6):after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: var(--mainBrown);
+    display: block;
+    position: absolute;
+    left: 50%;
+}
+nav>ul li:hover:after{
+    width: 100%;
+    left: 0%;
+}
+nav>a.mobileMenu {
+    display: none;
+    z-index: 101;
+    position: relative;
+    color: var(--mainBlue);
+}
+
+nav>a.mobileMenu span {
+    display: inline-block;
+    position: relative;
+    margin-left: 15px;
+    top: -5px;
+    height: 3px;
+    width: 25px;
+    background: var(--mainBlue);
+}
+
+nav>a.mobileMenu span:before,
+nav>a.mobileMenu span:after {
+    height: 3px;
+    content: "";
+    width: 25px;
+    background: var(--mainBlue);
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    margin: -7px 0 0;
+}
+
+nav>a.mobileMenu span:after {
+    margin: 7px 0 0;
+}
+
+nav.active li>a{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+nav.active>a.mobileMenu span:before {
+    margin: 0;
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+nav.active>a.mobileMenu span:after {
+    margin: 0;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+nav.active>a.mobileMenu {
+    padding-right: 25px;
+}
+
+nav.active>a.mobileMenu span {
+    width: 0;
+}
+
+@media all and (max-width:830px) {
+    nav{
+        padding: 20px 0;
+    }
+    nav ul.flexBlock {
+        opacity: 0;
+        z-index: -101;
+        position: absolute;
+        width: 92%;
+        left: 2%;
+        right: 2%;
+        margin-top: 10px;
+        text-align: center;
+        padding: 20px 2%;
+        -moz-transform: translateY(-1000px);
+        -webkit-transform: translateY(-1000px);
+        -o-transform: translateY(-1000px);
+        -ms-transform: translateY(-1000px);
+        transform: translateY(-1000px);
+    }
+
+    nav ul.flexBlock a {
+        display: block;
+        padding: 2vh 0;
+    }
+
+    nav ul.flexBlock a:hover {
+        background: var(--mainBrown);
+        color: var(--white);
+    }
+
+    nav ul li.home a:before {
+        display: none;
+    }
+
+    nav ul li+li {
+        margin: 12px 0 0 0;
+    }
+    nav ul li:hover:after {
+        display: none;
+    }
+
+    nav.active ul.flexBlock {
+        display: block;
+        opacity: 1;
+        z-index: 101;
+        -moz-transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -o-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+
+    nav ul li.home a {
+        margin: 12px 0px;
+    }
+
+    nav ul li a {
+        padding: 12px 3px;
+    }
+
+    nav>a.mobileMenu {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        display: none;
+    }
+
+    nav>span.shadow {
+        position: fixed;
+        display: none;
+        opacity: 0;
+        z-index: -100;
+        background-color: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(2px);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    nav.active>span.shadow {
+        z-index: 100;
+        opacity: 1;
+        display: block;
+    }
+
+    nav.active>span.shadow:hover {
+        background: rgba(0, 0, 0, 0.35);
+        cursor: pointer;
+    }
+}
